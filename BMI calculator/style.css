@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://imgs.search.brave.com/B-VwCP6jPZ4rFnyx1RsIsdsZKNGipb5enjZ6FcL0Qzg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9ibG9nL3dw/LWNvbnRlbnQvdXBs/b2Fkcy9zaXRlcy81/LzIwMjAvMDcvc2h1/dHRlcnN0b2NrXzMz/MDA5NzY2Ny5qcGc_/dz03NTA'); /* Replace 'bmi_background.jpg' with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #333;
+
+
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin: 10px 0;
+}
+
+input, select {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #007BFF;
+    border: 1px solid #0056b3;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#healthIndicator {
+    margin-top: 20px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 5px;
+    height: 20px;
+    position: relative;
+}
+
+#healthBar {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #00ffbf, #00b386); 
+    border-radius: 5px;
+}
+
+.unit-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.unit-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+}

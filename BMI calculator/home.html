@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div id="bmiInfo">
+            <h2>About BMI</h2>
+            <p>Body Mass Index (BMI) is a numerical value calculated from an individual's height and weight. It provides an estimate of body fat and is used to categorize individuals into different weight status categories, including underweight, normal weight, overweight, and obese. BMI is a valuable tool for assessing overall health and is often used by healthcare professionals to screen for weight-related health risks.</p>
+            <p>However, it's important to note that BMI has limitations and does not account for factors like muscle mass and body composition. Therefore, it should be used as a starting point for evaluating one's health, and other factors should also be considered.</p>
+        </div>
+        <div class="input-box">
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" placeholder="Enter weight">
+            <button class="unit-button" id="kgButton">kg</button>
+            <button class="unit-button" id="lbsButton">lbs</button>
+        </div>
+        <div class="input-box">
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Enter height">
+            <button class="unit-button" id="cmButton">cm</button>
+            <button class="unit-button" id="inButton">in</button>
+        </div>
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <button onclick="resetFields()">Reset</button>
+        <div id="result">
+            <p>Your BMI is: <span id="bmiValue">-</span></p>
+            <div id="healthIndicator">
+                <div id="healthBar"></div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
